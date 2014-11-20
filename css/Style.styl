@@ -1,0 +1,603 @@
+@import "nib"
+@import "normalize.styl"
+@import "fonts.styl"
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
+
+//----------mixin--------------//
+vendor-prefixes = webkit o ms moz official
+// animacion(parametro)
+//  -webkit-animation parametro
+//  -moz-animation parametro
+//  -o-animation parametro
+//  -ms-animation parametro
+//  animation parametro
+
+
+//--------------variables------------------//
+
+//--colores--//
+rojo_oscuro = #b3283e
+rojo_claro = #d84760
+gris_claro = #efefd8
+marron_claro = #d8bfbf
+marron_oscuro = #bf8f8f
+negro = #321d26
+
+//--Fuente--//
+raleway = 'Raleway', sans-serif;
+ambrassador = 'ambassadorplus2'
+
+//------------menu----------------//
+.menu-uno
+  background #321d26
+  a
+    font-family: ambrassador
+    font-weight 800
+    font-size 1.6 rem
+    color #efefd8
+    transition .2s
+  a:hover
+    background-color rojo_claro
+    color gris_claro
+.menu-dos
+  background #bf8f8f
+  a
+    font-family: ambrassador
+    font-weight 800
+    font-size 1.6 rem
+    color #321d26
+    transition .2s
+  a:hover
+    background-color rojo_claro
+    color gris_claro
+.menu-tres
+  background #d8bfbf
+  a
+    font-family: ambrassador
+    font-weight 800
+    font-size 1.6 rem
+    color #321d26
+    transition .2s
+  a:hover
+    background-color rojo_claro
+    color gris_claro
+.menu-cuatro
+  background #efefd8
+  a
+    font-family: ambrassador
+    font-weight 800
+    font-size 1.6 rem
+    color #321d26
+    transition .2s
+  a:hover
+    background-color rojo_claro
+    color gris_claro
+
+//----------header-----------------//
+
+.header-index
+  display block
+  position relative
+  padding-top 6rem
+  background-image url(../img/fondo.png)
+  background-size cover
+  background-repeat no-repeat
+  color gris_claro
+  .headerIndex-text
+    margin 0 0 3rem 0
+    font-family ambrassador
+    font-size 5rem
+    line-height 3.8rem
+    text-align center
+  .headerIndex-img
+    text-align center   
+    display block 
+
+.header-ofertas, .header-blog, .header-noticia, .header-carrito
+  display block
+  position relative
+  padding-top 6rem
+  background-image url(../img/fondo.png)
+  background-size cover
+  background-repeat no-repeat
+  color gris_claro
+  .headerOfertas-text
+    margin 0
+    font-family ambrassador
+    font-size 6.5rem
+    line-height 7rem
+    text-align center
+  .headerOfertas-text2
+    margin 0 0 3rem 0
+    font-family ambrassador
+    font-size 3rem
+    line-height 3rem
+    text-align center      
+
+.headerArticle-box
+  position absolute
+  bottom 0
+  font-weight 600
+  font-family ambrassador
+  padding 2rem
+  width 100%
+  background gris_claro
+  color negro
+  opacity .6
+  .informacion-item
+    text-align right
+    .nombre-item
+      font-size 30px
+      margin 0
+    .cuerpo-item
+      font-size 20px
+      margin 0
+    .talla-item
+      font-size 18px
+      margin 0
+    .precio-item
+      font-size 30px
+      margin 0
+      color rojo_oscuro
+    .comprar
+      font-size 30px
+      color rojo_oscuro
+      margin 0
+      & > a:hover
+        color negro
+        text-decoration none        
+
+.header-store
+  display block
+  position relative
+  padding-top 6rem
+  background-image url(../img/fondo.png)
+  background-size cover
+  background-repeat no-repeat
+  color gris_claro
+  .headerStore-text
+    margin 0
+    font-family ambrassador
+    font-size 6.5rem
+    line-height 7rem
+    text-align center
+  .headerStore-text2
+    margin 0 0 3rem 0
+    font-family ambrassador
+    font-size 3rem
+    line-height 3rem
+    text-align center
+
+//------------block1--------------//
+
+.block1-index
+  padding 3rem 0
+  background rojo_oscuro
+  color gris_claro
+  text-align center
+  & > a
+    text-decoration none
+    color gris_claro
+  .block1-index-titulo
+    font-family ambrassador
+    font-size 6rem
+  .block1-index-parrafo
+    text-align left
+    padding 0 2em
+    font-family raleway
+    font-size 16px
+    font-weight 500
+
+.block1-ofertas
+  padding 3rem 0 0 0
+  background white
+  color rojo_oscuro
+  text-align center
+  .item-ofertas
+    position relative
+    .block1-ofertas-img > img
+      width 100%
+    .informacion-item
+      margin-bottom 2rem
+      padding 1rem 0
+      height auto
+      width 100%
+      bottom 0
+      position relative
+      background gris_claro
+      .cuerpo-item
+        line-height 16px
+        display block
+        margin-bottom 0
+        font-family ambrassador
+        font-size 16px
+        font-weight 500
+      .precio-item
+        display block
+        margin-bottom 0
+        font-family ambrassador
+        font-size 20px
+        font-weight 500
+      .nombre-item
+        line-height 1.8rem
+        margin-bottom 1rem
+        font-family ambrassador
+        font-size 25px
+        color negro
+      .talla-item
+        margin-bottom 0
+        font-family ambrassador
+        font-size 16px
+        color negro
+      .ver-item
+        margin-bottom 0
+        font-family ambrassador
+        font-size 25px
+        color rojo_oscuro
+
+.block1-articulo
+  padding 3rem 0 0 0
+  background white
+  color rojo_oscuro
+  text-align center
+  .item-articulo
+    margin-bottom 3rem
+    position relative
+    .block1-articulo-img > img
+      width 100%
+
+.block1-blog
+  padding 2rem
+  .noticia 
+    text-align center  
+    border-bottom 1px solid negro
+    & > a
+      width 49%
+      display inline-block
+      margin 1rem 0
+      font-size 16px
+      font-family ambrassador
+      font-weight 600
+      padding 1rem
+      &:hover
+        text-decoration none
+    .titulo
+      margin 0
+      font-family ambrassador
+      font-size 20px
+      color negro
+      font-weight 600
+    .share
+      transition .3s
+      color negro
+      background marron_claro
+      &:hover
+        background marron_oscuro
+    .ver
+      transition .3s
+      color gris_claro
+      background rojo_oscuro
+      &:hover
+        background rojo_claro 
+
+.block1-noticia
+    font-family raleway
+    font-size 16px
+    text-align left
+    display inline-block
+    padding 4rem 2rem 0 
+
+.block1-carrito
+  padding 2rem 
+  display block
+  .item-carrito
+    border-bottom 1px solid negro
+    .precio
+      float left
+      margin-top 1rem
+      margin-right 10%
+      display block
+      font-family ambrassador
+      font-size 30px
+      color rojo_oscuro
+    .producto
+      margin-top 1rem
+      text-align right
+      display block
+      .nombre
+        font-size 22px
+        color rojo_oscuro
+        font-family ambrassador
+      .talla, .cantidad
+        font-size 18px
+        color negro
+        font-family ambrassador
+      
+
+.block2-blog
+  display none
+
+.box-light
+  display none
+  width 100%
+  background negro
+  opacity .7
+  position absolute
+  top 0
+  padding 40% 0
+  height 150%
+
+.socialmedia
+  margin 0
+  text-align center
+  & > img
+    margin 1rem 
+    width 80%
+    
+.formulario-carrito
+    text-align center
+
+.texto-formulario
+  font-family ambrassador
+  font-size 20px
+  font-weight 600
+  text-align center
+    
+.block2-carrito > .formulario-carrito > form > input
+    width 90%
+    padding 1rem
+    font-family ambrassador
+    color negro
+    padding 1rem
+    background gris_claro
+    border 1px solid rojo_claro
+    margin 1rem auto
+    font-size 16px
+    font-weight 600
+
+.btn-confirmar
+    margin 0 auto
+    text-align center
+    width 90%
+    color white
+    background rojo_oscuro
+    font-family ambrassador
+    font-size 30px
+    padding 1rem
+    transition 0.1s
+    &:hover
+      background negro
+
+.store-iconos
+  padding 2rem 0 0 0
+  position relative
+  .store-categoria
+    text-align center
+    .store-ico > img, .store-descripcion
+      width 80%
+    .store-descripcion
+      width 100%
+      font-family ambrassador
+      font-size 20px
+      color negro
+      font-weight 600
+
+.block2-index
+  padding 3rem 0
+  background white
+  color negro
+  text-align center
+  & > a
+    text-decoration none
+    color negro
+  .block2-index-titulo
+    font-family ambrassador
+    font-size 4.5rem
+  .block2-index-parrafo
+    text-align left
+    padding 0 2em
+    font-family raleway
+    font-size 16px
+    font-weight 500
+
+.volver
+  display block
+  text-align center
+  padding 1rem 0
+  .btn-volver
+    font-family ambrassador
+    color rojo_oscuro
+    font-size 30px 
+    text-align center
+    text-decoration none
+    transition .5s
+    &:hover
+      color negro    
+
+footer
+  background negro
+  color gris_claro
+  padding 3rem 0
+  & > .footer-ofertas
+    border-right 1px solid gris_claro
+  .footer-ofertas, .footer-carrito
+    display inline-block
+    font-family ambrassador
+    font-size 3rem
+    width 49%
+    text-align center
+    & > p
+      margin 0
+      padding 1rem
+
+.header-admin
+  padding 10rem 0
+  text-align center
+  & > h1
+    font-size 50px
+    line-height 50px
+    font-family ambrassador
+    font-weight 400
+    color rojo_oscuro
+
+.grupo-panel
+  text-align center
+  .panel
+    border-radius 0
+    vertical-align top
+    text-align center
+    color gris_claro
+    padding 3rem
+    width 24.7%
+    height 300px
+    display inline-block
+    margin 0
+    font-size 25px
+    font-family ambrassador
+    font-weight 400
+    background negro  
+    &:hover
+      background rojo_oscuro
+      color gris_claro
+    & > figure
+      margin-bottom 3rem
+  
+.banner
+  display none
+  top 0
+  width 100%
+  height 100%
+  background negro
+  opacity .7
+  position absolute
+  & > p
+    top 300px
+    position relative
+    margin 0 auto
+    text-align center
+    font-size 16px
+    font-family ambrassador
+    width 300px
+    background gris_claro
+    color negro
+    padding 3rem
+
+@media screen and (min-width: 1000px)
+
+  .header-index 
+    padding-top 12rem
+    display block
+    height 600px
+    .headerIndex-box
+      float left
+      width 50%
+    .headerIndex-text
+      text-align left
+      width 100%
+    .headerIndex-img
+      text-align left
+      width 100%
+
+  .header-ofertas, .header-blog, .header-noticia, .header-carrito
+    padding-top 40rem
+    display block
+    height 600px
+    .headerOfertas-text
+      font-size 12rem
+
+  .header-store
+    padding-top 40rem
+    display block
+    height 600px
+    .headerStore-text
+      font-size 12rem
+  
+  .noticia 
+    & > a
+      width 49%
+      display inline-block
+      margin 1rem 0
+      font-size 16px
+      font-family ambrassador
+      font-weight 600
+      padding 1rem
+      &:hover
+        text-decoration none
+    .titulo
+      margin 0
+      font-family ambrassador
+      font-size 20px
+      color negro
+      font-weight 600
+  
+  .block1-index, .block2-index
+    width 49.5%
+    margin 0
+    display inline-block
+
+  .block1-blog, .block1-carrito
+    width 70%
+    display inline-block
+
+  .block1-noticia
+    font-family raleway
+    font-size 16px
+    text-align left
+    width 70%
+    display inline-block
+    padding 4rem 2rem
+
+  .block-general-blog
+    text-align center
+    background gris_claro
+
+  .block2-blog, .block2-carrito
+    border-left 1px solid negro
+    text-align center
+    vertical-align top
+    margin 4rem 1rem 1rem 
+    padding-left 1.5rem
+    display inline-block
+    .listado-blog      
+      .titulo
+        margin-bottom 1rem
+        margin 0
+        font-family ambrassador
+        font-size 20px
+        color negro
+        font-weight 600
+        transition .3s
+        &:hover
+          color rojo_oscuro
+  
+  .block2-carrito
+    width 25%
+    
+  .btn-confirmar
+    width 100%
+    color white
+    background rojo_oscuro
+    font-family ambrassador
+    font-size 30px
+    padding 1rem
+    transition 0.1s
+    &:hover
+      background negro
+
+  .block2-carrito > .formulario-carrito > form > input
+    width 100%
+    padding 1rem
+    font-family ambrassador
+    color negro
+    padding 1rem
+    background gris_claro
+    border 1px solid rojo_claro
+    margin-bottom 2rem
+    font-size 16px
+    font-weight 600
+
+  .socialmedia
+    & > img
+      width 20%
+      display block
+      margin 0 auto
