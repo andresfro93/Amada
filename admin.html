@@ -36,159 +36,148 @@
 	</header>
 	
 	<section class="header-admin">
-		<h1>Adminstra los diferentes topicos de Amada intima</h1>
+		<p class="titulo-admin">Administra tu website</p>
 	</section>
-	<div class="grupo-panel">
-		<section class="panel control-banner">
-			<figure class="block1-index-img">
-				<img src="img/icono1.png" width="100" alt="store_amada">
-			</figure>
-			<p>Modifica el banner de ofertas</p>
-		</section>
-		<section class="panel control-product">
-			<figure class="block1-index-img">
-				<img src="img/icono1.png" width="100" alt="store_amada">
-			</figure>
-			<p>Carga nuevos productos</p>
-		</section>
-		<section class="panel control-oferta">
-			<figure class="block1-index-img">
-				<img src="img/icono1.png" width="100" alt="store_amada">
-			</figure>
-			<p>Selecciona tus propias ofertas</p>
-		</section>
-		<section class="panel control-news">
-			<figure class="block1-index-img">
-				<img src="img/icono1.png" width="100" alt="store_amada">
-			</figure>
-			<p>Adiciona nuevos articulos</p>
-		</section>
-		<section class="panel control-ventas">
-			<figure class="block1-index-img">
-				<img src="img/icono1.png" width="100" alt="store_amada">
-			</figure>
-			<p>Revisa tus ventas, clientes, y mercancia</p>
-		</section>
-	</div>
+	<section class="admin-botones">
+		<p class="btn-admin negro banner-btn">cargar banner promoción</p>
+		<p class="btn-admin marron-claro inventario-btn">administra tu inventario</p>
+		<p class="btn-admin marron-oscuro promociones-btn">modifica las promociones</p>
+		<p class="btn-admin gris noticias-btn">edita los articulos de intima</p>
+		<p class="btn-admin rojo-claro ventas-btn">estadisticas de venta</p>
+	</section>
+	<section class="centrado banner">
+		<p class="btn-admin boton">cargar banner</p>
+	</section>
+	<section class="centrado inventario">
+		<div class="caja">
+			<p class="btn-admin boton">cargar prenda</p>
+			<form action="">
+				<input type="text" placeholder="">
+				<input type="text" placeholder="">
+				<input type="text" placeholder="">
+				<input type="text" placeholder="">
+				<input type="text" placeholder="">
+			</form>
+			<p class="load">cargar</p>
+		</div>
+		<div class="caja">
+			<p class="btn-admin boton">modificar lista de productos</p>
+			<ul>
+				<li>articulo 1</li><p>modificar</p>
+				<li>articulo 1</li><p>modificar</p>
+				<li>articulo 1</li><p>modificar</p>
+				<li>articulo 1</li><p>modificar</p>
+			</ul>
+		</div>
+		
+	</section>
+	<section class="centrado promociones">
+		<div class="caja">
+			<p class="btn-admin boton">cargar promociones</p>
+			<form action="">
+				<input type="text" placeholder="">
+				<input type="text" placeholder="">
+				<input type="text" placeholder="">
+				<input type="text" placeholder="">
+				<input type="text" placeholder="">
+			</form>
+			<p class="load">cargar</p>
+		</div>
+		<div class="caja">
+			<p class="btn-admin boton">asignar promociones</p>
+			<ul>
+				<li>articulo 1</li><select placeholder="asignar"></select>
+				<li>articulo 1</li><select placeholder="asignar"></select>
+				<li>articulo 1</li><select placeholder="asignar"></select>
+				<li>articulo 1</li><select placeholder="asignar"></select>
+			</ul>
+		</div>
+	</section>
+	<section class="centrado noticias">
+		<div class="caja">
+			<p class="btn-admin boton">nueva noticia</p>
+			<form action="">
+				<input type="text" placeholder="">
+				<textarea></textarea>
+			</form>
+			<p class="load">cargar</p>
+		</div>
+		<div class="caja">
+			<p class="btn-admin boton">administrar articulos</p>
+			<ul>
+				<li>articulo 1</li><p>modificar</p>
+				<li>articulo 1</li><p>modificar</p>
+				<li>articulo 1</li><p>modificar</p>
+				<li>articulo 1</li><p>modificar</p>
+			</ul>
+		</div>
+	</section>
+	<section class="centrado ventas">
+		<p class="btn-admin boton registro-btn">registro de ventas</p>
+		<p class="btn-admin boton envios-btn">envios pendientes</p>
+		<p class="btn-admin boton usuarios-btn">usuarios registrados</p>
+		<p class="btn-admin boton pagos-btn">pagos exitosos</p>
+		<div class="ventas-caja registro">
+			<div class="bloque1">
+				<p>prendas vendidas</p>
+				<form action="">
+					<input type="text">
+					<input type="text">
+					<input type="text">
+				</form>
+			</div>
+			<div class="bloque2">
+				grafica aqui
+			</div>			
+		</div>
+		<div class="ventas-caja envios">
+		<div class="bloque1">
+			<div class="envio-pendiente">
+				<p>articulo pendiete de envio a cali</p>
+				<p>cubierto</p>
+			</div>
+			<div class="envio-pendiente">
+				<p>articulo pendiete de envio a cali</p>
+				<p>cubierto</p>
+			</div>
+			<div class="envio-pendiente">
+				<p>articulo pendiete de envio a cali</p>
+				<p>cubierto</p>
+			</div>
+			<div class="envio-pendiente">
+				<p>articulo pendiete de envio a cali</p>
+				<p>cubierto</p>
+			</div>
+		</div>
+		<div class="ventas-caja usuarios">
+			<div class="bloque1">
+				<p>usuarios registrados: 523</p>
+				<form action="">
+					<select name="filtro ciudad" id=""></select>
+				</form>
+			</div>
+			<div class="bloque2">
+				grafica aqui
+			</div>			
+		</div>
+		<div class="ventas-caja pagos">
+			<div class="bloque1">
+				<p>ventas: 5'562.325</p>
+				<form action="">
+					<select name="filtro ciudad" id=""></select>
+					<select name="filtro ciudad" id=""></select>
+					<select name="filtro ciudad" id=""></select>
+					<select name="filtro ciudad" id=""></select>
+				</form>
+			</div>
+			<div class="bloque2">
+				grafica aqui
+			</div>			
+		</div>
 
-	<!--carga banner-->
+	</section>
 
-	<div class="banner-box">
-		<p class="banner-btn">selecciona archivo</p>
-	</div>
-	<div class="product-box">		
-		<form action="">
-			<input type="text" placeholder="Nombre del producto">
-			<input type="text" placeholder="categoria">
-			<input type="text" placeholder="tipo de cuerpo">
-			<input type="text" placeholder="precio">
-			<input type="text" placeholder="tallas disponibles">
-			<div class="btn-load">cargar foto</div>
-		</form>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dicta hic amet cupiditate delectus porro totam sapiente quia sed consequuntur labore maxime, rerum necessitatibus provident nesciunt obcaecati placeat enim at?</p>
-		<figure class="img">
-			<img src="img/modelo1.png" alt="">
-			<img src="img/modelo1.png" alt="">
-			<img src="img/modelo1.png" alt="">
-			<img src="img/modelo1.png" alt="">
-			<img src="img/modelo1.png" alt="">
-		</figure>
-	</div>
-	<div class="oferta-box">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat in atque voluptatum, minima quam voluptate rerum ipsa vel tempore perspiciatis non, iure odio dicta voluptatibus. Possimus iste modi repellendus mollitia.</p>
-		<div class="item">
-			<p>Panti Francia</p>
-			<select name="carlist" form="carform">
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
-		</div>
-		<div class="item">
-			<p>Panti Francia</p>
-			<select name="carlist" form="carform">
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
-		</div>
-		<div class="item">
-			<p>Panti Francia</p>
-			<select name="carlist" form="carform">
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
-		</div>
-		<div class="item">
-			<p>Panti Francia</p>
-			<select name="carlist" form="carform">
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
-		</div>
-		<div class="item">
-			<p>Panti Francia</p>
-			<select name="carlist" form="carform">
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
-		</div>
-	</div>
-	<div class="news-box">
-		<div class="list-articles">
-			<p>Noticia 1</p>
-			<p>Noticia 2</p>
-			<p>Noticia 3</p>
-			<p>Noticia 4</p>
-			<p>Noticia 5</p>
-		</div>		
-		<form action="">
-			<p>Nueva noticia</p>
-			<input type="text" placeholder="titulo">
-			<textarea type="text" placeholder="noticia"></textarea>
-			<div class="btn-load">cargar foto</div>
-			<div class="btn-load">publicar noticia</div>
-		</form>
-	</div>
-	<div class="ventas-box">
-		<p>Estadisticas y analisis de datos</p>
-		<div class="ventas-grafica">aqui grafica</div>
-		<div class="ventas-opciones">
-			<p>selecciona un periodo</p>
-			<select name="carlist" form="carform">
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
-			<select name="carlist" form="carform">
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
-			<p>facturacion del periodo seleccionado</p>
-			<p class="dinero">$ 10'520.000</p>
-			<p>Prendas en existencia: 23</p>
-			<select name="carlist" form="carform">
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
-			<p>Envios pendientes</p>
-			<div class="bloque-ventas">aqui lista de envios pendientes</div>
-		</div>
-	</div>
-	
+
 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
