@@ -6,49 +6,64 @@ $('body').keypress(function(){
 	$('.box-light').fadeOut(600);
 });
 
-/*boton admin banner*/
-$('.control-banner').click(function(){
-	$('.banner-box').fadeIn(600);
+/*admin banner*/
+
+$('.banner-btn').click(function(){
+	$('.inventario,.promociones,.noticias,.ventas').fadeOut(800)
+	$('.banner').fadeToggle(800);
+	
 });
 
-$('body').keypress(function(){
-	$('.banner-box').fadeOut(600);
+$('.inventario-btn').click(function(){
+	$('.banner,.promociones,.noticias,.ventas').fadeOut(800)
+	$('.inventario').fadeToggle(800);
+	
 });
 
-/*boton admin producto*/
-$('.control-product').click(function(){
-	$('.product-box').fadeIn(600);
+$('.promociones-btn').click(function(){
+	$('.banner,.inventario,.noticias,.ventas').fadeOut(800)
+	$('.promociones').fadeToggle(800);
+	
 });
 
-$('body').keypress(function(){
-	$('.product-box').fadeOut(600);
+$('.noticias-btn').click(function(){
+	$('.banner,.inventario,.promociones,.ventas').fadeOut(800)
+	$('.noticias').fadeToggle(800);
+	
 });
 
-/*boton admin oferta*/
-$('.control-oferta').click(function(){
-	$('.oferta-box').fadeIn(600);
+$('.ventas-btn').click(function(){
+	$('.banner,.inventario,.noticias,.promociones').fadeOut(800)
+	$('.ventas').fadeToggle(800);
+	
 });
 
-$('body').keypress(function(){
-	$('.oferta-box').fadeOut(600);
+/*ventas*/
+
+$('.registro-btn').click(function(){
+	$('.envios,.usuarios,.pagos').fadeOut(800)
+	$('.registro').fadeToggle(800);
+	
 });
 
-/*boton admin noticias*/
-$('.control-news').click(function(){
-	$('.news-box').fadeIn(600);
+$('.envios-btn').click(function(){
+	$('.registro,.usuarios,.pagos').fadeOut(800)
+	$('.envios').fadeToggle(800);
+	
 });
 
-$('body').keypress(function(){
-	$('.news-box').fadeOut(600);
+$('.usuarios-btn').click(function(){
+	$('.envios,.registro,.pagos').fadeOut(800)
+	$('.usuarios').fadeToggle(800);
+	
 });
 
-/*boton ventas*/
-$('.control-ventas').click(function(){
-	$('.ventas-box').fadeIn(600);
+$('.pagos-btn').click(function(){
+	$('.registro,.envios,.usuarios').fadeOut(800)
+	$('.pagos').fadeToggle(800);
+	
 });
 
-$('body').keypress(function(){
-	$('.ventas-box').fadeOut(600);
-});
+
 
 
