@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 	<header>
 		<nav class="navbar navbar-default" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -44,6 +45,7 @@
 		<p class="btn-admin marron-oscuro promociones-btn">modifica las promociones</p>
 		<p class="btn-admin gris noticias-btn">edita los articulos de intima</p>
 		<p class="btn-admin rojo-claro ventas-btn">estadisticas de venta</p>
+		<p class="btn-admin negro configuracion-btn">Configuración</p>
 	</section>
 	<section class="centrado banner">
 		<p class="btn-admin boton">cargar banner</p>
@@ -120,45 +122,49 @@
 		<div class="ventas-caja registro">
 			<div class="bloque1">
 				<p>prendas vendidas</p>
-				<form action="">
+				<form action="lib/cargar-grafica.php" method="post">
+					<input type="hidden" name="grafica" value="prendas-vendidas">
 					<input type="text">
 					<input type="text">
 					<input type="text">
+					<input type="submit" class="form-control btn btn-primary" value="Ver grafica">
 				</form>
-			</div>
-			<div class="bloque2">
-				grafica aqui
-			</div>			
+			</div>		
 		</div>
 		<div class="ventas-caja envios">
-		<div class="bloque1">
-			<div class="envio-pendiente">
-				<p>articulo pendiete de envio a cali</p>
-				<p>cubierto</p>
-			</div>
-			<div class="envio-pendiente">
-				<p>articulo pendiete de envio a cali</p>
-				<p>cubierto</p>
-			</div>
-			<div class="envio-pendiente">
-				<p>articulo pendiete de envio a cali</p>
-				<p>cubierto</p>
-			</div>
-			<div class="envio-pendiente">
-				<p>articulo pendiete de envio a cali</p>
-				<p>cubierto</p>
+			<div class="bloque1">
+				<div class="envio-pendiente">
+					<p>articulo pendiete de envio a cali</p>
+					<p>cubierto</p>
+				</div>
+				<div class="envio-pendiente">
+					<p>articulo pendiete de envio a cali</p>
+					<p>cubierto</p>
+				</div>
+				<div class="envio-pendiente">
+					<p>articulo pendiete de envio a cali</p>
+					<p>cubierto</p>
+				</div>
+				<div class="envio-pendiente">
+					<p>articulo pendiete de envio a cali</p>
+					<p>cubierto</p>
+				</div>
 			</div>
 		</div>
 		<div class="ventas-caja usuarios">
 			<div class="bloque1">
 				<p>usuarios registrados: 523</p>
-				<form action="">
+				<form action="lib/cargar-grafica.php" method="post">
 					<select name="filtro ciudad" id=""></select>
+					<input type="hidden" name="grafica" value="grafica-usuairos">
+					<input type="submit" class="btn btn-primary" value="Ver grafica">
 				</form>
 			</div>
+			<!--
 			<div class="bloque2">
-				grafica aqui
-			</div>			
+			
+			</div>
+			-->			
 		</div>
 		<div class="ventas-caja pagos">
 			<div class="bloque1">
@@ -176,11 +182,26 @@
 		</div>
 
 	</section>
-
-
-
+	<section class="centrado configuracion">
+			<div class="col-md-12">
+				<p class="btn-event btn-admin boton" data-realizar="mod-tipos">Tipos prendas</p>
+				<p class="btn-event btn-admin boton" data-realizar="mod-tallas">Tallas</p>
+				<p class="btn-event btn-admin boton" data-realizar="mod-colores">Colores prendas</p>
+				<p class="btn-event btn-admin boton" data-realizar="mod-cuerpos">Cuerpos</p>
+			</div>
+			<div class="col-md-10 col-md-offset-1 visual-configuracion scrl">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.
+				</p>
+			</div>
+	</section>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/Script.js"></script>
+	<script src="js/js.js"></script>
 </body>
 </html>
