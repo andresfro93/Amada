@@ -356,6 +356,18 @@ ambrassador = 'ambassadorplus2'
         font-size 18px
         color negro
         font-family ambrassador
+
+.block1-politicas
+  padding 5rem 1rem
+  text-align center
+  .politicas-titulo
+    font-family ambrassador
+    font-size 30px
+    color negro 
+  .politicas-texto
+    width 100%
+    font-size 16px
+    text-align left
       
 
 .block2-blog
@@ -434,15 +446,36 @@ ambrassador = 'ambassadorplus2'
   & > a
     text-decoration none
     color negro
-  .block2-index-titulo
-    font-family ambrassador
-    font-size 4.5rem
-  .block2-index-parrafo
-    text-align left
-    padding 0 2em
-    font-family raleway
-    font-size 16px
-    font-weight 500
+    
+.block2-index-titulo
+  font-family ambrassador
+  font-size 4.5rem
+  
+.block2-index-parrafo
+  text-align left
+  padding 0 2em
+  font-family raleway
+  font-size 16px
+  font-weight 500
+
+.block3-index
+  padding 3rem
+  text-align center
+  background white
+  color negro
+  & > a
+    text-decoration none
+    color negro
+  
+.block4-index
+  padding 3rem
+  text-align center
+  background rojo_oscuro
+  color gris_claro
+  & > a
+    text-decoration none
+    color gris_claro
+
 
 .volver
   display block
@@ -619,7 +652,7 @@ footer
 @media screen and (min-width: 1000px)
 
   .header-index 
-    padding-top 12rem
+    padding-top 35rem
     display block
     height 600px
     .headerIndex-box
@@ -664,9 +697,9 @@ footer
       color negro
       font-weight 600
   
-  .block1-index, .block2-index
-    width 49.5%
-    margin 0
+  .block1-index, .block2-index, .block3-index, .block4-index
+    width 50%
+    margin 0 -1px
     display inline-block
 
   .block1-blog, .block1-carrito
@@ -680,6 +713,11 @@ footer
     width 70%
     display inline-block
     padding 4rem 2rem
+  
+  .block1-politicas
+    .politicas-texto
+      width 50%
+      margin 0 auto
 
   .block-general-blog
     text-align center

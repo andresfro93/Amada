@@ -615,6 +615,20 @@ table {
   color: #321d26;
   font-family: 'ambassadorplus2';
 }
+.block1-politicas {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+.block1-politicas .politicas-titulo {
+  font-family: 'ambassadorplus2';
+  font-size: 30px;
+  color: #321d26;
+}
+.block1-politicas .politicas-texto {
+  width: 100%;
+  font-size: 16px;
+  text-align: left;
+}
 .block2-blog {
   display: none;
 }
@@ -705,16 +719,36 @@ table {
   text-decoration: none;
   color: #321d26;
 }
-.block2-index .block2-index-titulo {
+.block2-index-titulo {
   font-family: 'ambassadorplus2';
   font-size: 4.5rem;
 }
-.block2-index .block2-index-parrafo {
+.block2-index-parrafo {
   text-align: left;
   padding: 0 2em;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 500;
+}
+.block3-index {
+  padding: 3rem;
+  text-align: center;
+  background: #fff;
+  color: #321d26;
+}
+.block3-index > a {
+  text-decoration: none;
+  color: #321d26;
+}
+.block4-index {
+  padding: 3rem;
+  text-align: center;
+  background: #b3283e;
+  color: #efefd8;
+}
+.block4-index > a {
+  text-decoration: none;
+  color: #efefd8;
 }
 .volver {
   display: block;
@@ -952,7 +986,7 @@ footer .footer-carrito > p {
 }
 @media screen and (min-width: 1000px) {
   .header-index {
-    padding-top: 12rem;
+    padding-top: 35rem;
     display: block;
     height: 600px;
   }
@@ -1010,9 +1044,11 @@ footer .footer-carrito > p {
     font-weight: 600;
   }
   .block1-index,
-  .block2-index {
-    width: 49.5%;
-    margin: 0;
+  .block2-index,
+  .block3-index,
+  .block4-index {
+    width: 50%;
+    margin: 0 -1px;
     display: inline-block;
   }
   .block1-blog,
@@ -1027,6 +1063,10 @@ footer .footer-carrito > p {
     width: 70%;
     display: inline-block;
     padding: 4rem 2rem;
+  }
+  .block1-politicas .politicas-texto {
+    width: 50%;
+    margin: 0 auto;
   }
   .block-general-blog {
     text-align: center;
