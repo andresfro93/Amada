@@ -492,20 +492,66 @@ ambrassador = 'ambassadorplus2'
       color negro    
 
 footer
-  background negro
-  color gris_claro
-  padding 3rem 0
-  & > .footer-ofertas
-    border-right 1px solid gris_claro
-  .footer-ofertas, .footer-carrito
-    display inline-block
+  text-align center
+  .titulo-contacto
+    display none
     font-family ambrassador
-    font-size 3rem
-    width 49%
-    text-align center
-    & > p
-      margin 0
-      padding 1rem
+    font-size 25px
+    color negro
+    font-weight 600
+    margin 20px 0
+  .footer
+    margin-bottom 30px
+    background negro
+    color gris_claro
+    padding 3rem 0
+    & > .footer-ofertas
+      border-right 1px solid gris_claro
+    .footer-ofertas, .footer-carrito
+      display inline-block
+      font-family ambrassador
+      font-size 3rem
+      width 50%
+      margin 0 -1px
+      text-align center
+      & > p
+        color gris_claro
+        margin 0
+        padding 1rem
+  .form
+    display none
+    margin-bottom 30px
+    input, textarea
+      margin 0 auto
+      font-size 16px
+      font-family ambrassador
+      display block
+      width 90%
+      padding 5px
+      margin-bottom 5px
+  .derechos
+    padding 10px 0
+    border-top 1px solid negro
+    opacity .6
+    margin-top 30px
+    width 90%
+  p
+    display inline-block
+    margin 0 10px
+    color negro
+    text-decoration none
+    & > a
+      color negro
+      text-decoration none
+      transition .3s
+      &:hover
+        padding 5px
+        border-bottom 3px solid rojo_oscuro
+        color rojo_oscuro
+        text-decoration none
+  
+      
+
       
 /*admin*/
 
@@ -773,6 +819,15 @@ footer
       width 20%
       display block
       margin 0 auto
+      
+  footer
+    .form
+      input, textarea 
+        width 50%
+    .derechos
+      display block
+      width 50%
+      margin 30px auto
   
   /*admin*/
     

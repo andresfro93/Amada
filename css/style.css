@@ -771,25 +771,83 @@ table {
   color: #321d26;
 }
 footer {
+  text-align: center;
+}
+footer .titulo-contacto {
+  display: none;
+  font-family: 'ambassadorplus2';
+  font-size: 25px;
+  color: #321d26;
+  font-weight: 600;
+  margin: 20px 0;
+}
+footer .footer {
+  margin-bottom: 30px;
   background: #321d26;
   color: #efefd8;
   padding: 3rem 0;
 }
-footer > .footer-ofertas {
+footer .footer > .footer-ofertas {
   border-right: 1px solid #efefd8;
 }
-footer .footer-ofertas,
-footer .footer-carrito {
+footer .footer .footer-ofertas,
+footer .footer .footer-carrito {
   display: inline-block;
   font-family: 'ambassadorplus2';
   font-size: 3rem;
-  width: 49%;
+  width: 50%;
+  margin: 0 -1px;
   text-align: center;
 }
-footer .footer-ofertas > p,
-footer .footer-carrito > p {
+footer .footer .footer-ofertas > p,
+footer .footer .footer-carrito > p {
+  color: #efefd8;
   margin: 0;
   padding: 1rem;
+}
+footer .form {
+  display: none;
+  margin-bottom: 30px;
+}
+footer .form input,
+footer .form textarea {
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'ambassadorplus2';
+  display: block;
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+footer .derechos {
+  padding: 10px 0;
+  border-top: 1px solid #321d26;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  margin-top: 30px;
+  width: 90%;
+}
+footer p {
+  display: inline-block;
+  margin: 0 10px;
+  color: #321d26;
+  text-decoration: none;
+}
+footer p > a {
+  color: #321d26;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+footer p > a:hover {
+  padding: 5px;
+  border-bottom: 3px solid #b3283e;
+  color: #b3283e;
+  text-decoration: none;
 }
 /*admin*/
 .header-admin {
@@ -1134,6 +1192,15 @@ footer .footer-carrito > p {
     width: 20%;
     display: block;
     margin: 0 auto;
+  }
+  footer .form input,
+  footer .form textarea {
+    width: 50%;
+  }
+  footer .derechos {
+    display: block;
+    width: 50%;
+    margin: 30px auto;
   }
   .admin-botones .btn-admin {
     width: 19.7%;

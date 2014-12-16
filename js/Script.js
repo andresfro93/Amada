@@ -6,12 +6,21 @@ $('body').keypress(function(){
 	$('.box-light').fadeOut(600);
 });
 
+/*contacto*/
+
+$('.btn-contacto').click(function(){
+	$('.titulo-contacto,.form').slideToggle(500);
+	$('html,body').stop(true,true).animate({
+        scrollTop:$('.form').offset().top
+    },1000);
+	
+});
+
 /*admin banner*/
 
 $('.banner-btn').click(function(){
 	$('.inventario,.promociones,.noticias,.ventas,.configuracion').fadeOut(800)
-	$('.banner').fadeToggle(800);
-	
+	$('.banner').fadeToggle(800);	
 });
 
 $('.inventario-btn').click(function(){
