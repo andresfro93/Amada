@@ -318,7 +318,8 @@ table {
   display: block;
   position: relative;
   padding-top: 6rem;
-  background-image: url("../img/fondo.png");
+  padding-bottom: 40%;
+  background-image: url("../img/amadaintima01.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -336,14 +337,33 @@ table {
   text-align: center;
   display: block;
 }
+.header-box {
+  width: 50%;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background: rgba(49,28,40,0.6);
+}
+.header-ofertas {
+  background-image: url("../img/amadaintima02.jpg");
+}
+.header-store {
+  background-image: url("../img/amadaintima03.jpg");
+}
+.header-carrito {
+  background-image: url("../img/amadaintima04.jpg");
+}
+.header-blog {
+  background-image: url("../img/amadaintima05.jpg");
+}
 .header-ofertas,
+.header-store,
 .header-blog,
 .header-noticia,
 .header-carrito {
   display: block;
   position: relative;
   padding-top: 6rem;
-  background-image: url("../img/fondo.png");
+  padding-bottom: 30%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -351,6 +371,7 @@ table {
   color: #efefd8;
 }
 .header-ofertas .headerOfertas-text,
+.header-store .headerOfertas-text,
 .header-blog .headerOfertas-text,
 .header-noticia .headerOfertas-text,
 .header-carrito .headerOfertas-text {
@@ -361,6 +382,7 @@ table {
   text-align: center;
 }
 .header-ofertas .headerOfertas-text2,
+.header-store .headerOfertas-text2,
 .header-blog .headerOfertas-text2,
 .header-noticia .headerOfertas-text2,
 .header-carrito .headerOfertas-text2 {
@@ -416,7 +438,6 @@ table {
   display: block;
   position: relative;
   padding-top: 6rem;
-  background-image: url("../img/fondo.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1041,6 +1062,55 @@ footer p > a:hover {
   width: 50%;
   height: 400px;
   border: 1px solid #321d26;
+}
+/*login*/
+.body {
+  background-image: url("../img/fondo.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.body .formularios {
+  text-align: center;
+  padding-top: 300px;
+}
+.body .formularios .login-blog {
+  padding: 20px;
+  margin: 0 5px;
+  background: #efefd8;
+  border: 1px solid #321d26;
+  display: inline-block;
+  width: 40%;
+}
+.body .formularios .login-blog .titulo-form {
+  color: #b3283e;
+  font-family: 'ambassadorplus2';
+  font-weight: 600;
+  font-size: 20px;
+}
+.body .formularios .login-blog .btn-login {
+  background: #b3283e;
+  color: #efefd8;
+  font-family: 'ambassadorplus2';
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+.body .formularios .login-blog .btn-login:hover {
+  background: #d84760;
+}
+.body .formularios .login-blog form input {
+  margin: 10px auto;
+  padding: 10px;
+  display: block;
+  width: 80%;
+  font-family: 'ambassadorplus2';
 }
 @media screen and (min-width: 1000px) {
   .header-index {

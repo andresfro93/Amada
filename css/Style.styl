@@ -123,10 +123,11 @@ ambrassador = 'ambassadorplus2'
   display block
   position relative
   padding-top 6rem
-  background-image url(../img/fondo.png)
+  padding-bottom 40%
+  background-image url(../img/amadaintima01.jpg)
   background-size cover
   background-repeat no-repeat
-  color gris_claro
+  color gris_claro  
   .headerIndex-text
     margin 0 0 3rem 0
     font-family ambrassador
@@ -137,11 +138,26 @@ ambrassador = 'ambassadorplus2'
     text-align center   
     display block 
 
-.header-ofertas, .header-blog, .header-noticia, .header-carrito
+.header-box
+  width 50%
+  padding-top 3rem
+  padding-bottom 1rem
+  background rgba(49,28,40,0.6)
+
+.header-ofertas
+  background-image url(../img/amadaintima02.jpg)
+.header-store
+  background-image url(../img/amadaintima03.jpg)
+.header-carrito
+  background-image url(../img/amadaintima04.jpg)
+.header-blog
+  background-image url(../img/amadaintima05.jpg)
+
+.header-ofertas, .header-store, .header-blog, .header-noticia, .header-carrito
   display block
   position relative
-  padding-top 6rem
-  background-image url(../img/fondo.png)
+  padding-top 6rem 
+  padding-bottom 30%
   background-size cover
   background-repeat no-repeat
   color gris_claro
@@ -195,7 +211,6 @@ ambrassador = 'ambassadorplus2'
   display block
   position relative
   padding-top 6rem
-  background-image url(../img/fondo.png)
   background-size cover
   background-repeat no-repeat
   color gris_claro
@@ -695,13 +710,42 @@ footer
     border 1px solid negro
 
 /*login*/
-
-.login-blog
-  form
-    input
-      display block
+.body
+  background-image url(../img/fondo.png)
+  background-size cover
+  background-repeat no-repeat
+  .formularios
+    text-align center 
+    padding-top 300px 
+    .login-blog
+      padding 20px
+      margin 0 5px
+      background gris_claro
+      border 1px solid negro
+      display inline-block
       width 40%
-      font-family ambrassador
+      .titulo-form 
+        color rojo_oscuro
+        font-family ambrassador
+        font-weight 600
+        font-size 20px
+      .btn-login
+        background rojo_oscuro
+        color gris_claro
+        font-family ambrassador
+        font-size 20px
+        width 80%
+        margin 0 auto
+        transition .3s
+        &:hover
+          background rojo_claro
+      form
+        input
+          margin 10px auto
+          padding 10px
+          display block
+          width 80%
+          font-family ambrassador
 
 @media screen and (min-width: 1000px)
 
